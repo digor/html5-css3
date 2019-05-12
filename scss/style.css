@@ -1,0 +1,737 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400|Raleway:400,400i,500,600,600i,800,800i");
+@font-face {
+  font-family: "Montserrat Ultra Light";
+  src: url("../fonts/Montserrat-UltraLight.otf");
+}
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+/*colors jf site*/
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-family: Relaway, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+p, a {
+  font-family: Monserrat, sans-serif;
+}
+
+.getStarted {
+  display: block;
+  margin: 15px auto 0;
+  width: 170px;
+  height: 53px;
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 #736357;
+  background-color: #998675;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 53px;
+  color: #fff;
+}
+.getStarted:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1920px;
+  position: relative;
+}
+.wrapper header {
+  color: #fff;
+  height: 1024px;
+}
+.wrapper header .slider {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+.wrapper header .slider .carousel .carousel-inner .item img {
+  filter: brightness(50%);
+}
+.wrapper header .slider .carousel .carousel-caption {
+  bottom: 35%;
+}
+.wrapper header .slider .carousel .carousel-caption h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.wrapper header .slider .carousel .carousel-caption h1 {
+  font-size: 52px;
+  font-weight: 400;
+  font-family: "Rockwell Extra Bold", sans-serif;
+  margin-top: 14px;
+}
+.wrapper header .slider .carousel .carousel-caption p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 19px;
+  /*width: 562px;*/
+}
+.wrapper header .slider .carousel .carousel-caption .getStarted {
+  margin-top: 52px;
+}
+.wrapper header .slider .carousel .carousel-indicators .active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #d3c1ad;
+}
+.wrapper header .slider .carousel .carousel-indicators li {
+  background-color: #fff;
+  opacity: 0.5;
+}
+.wrapper header .slider .carousel .carousel-control .glyphicon-menu-left, .wrapper header .slider .carousel .carousel-control .glyphicon-menu-right {
+  position: absolute;
+  top: 45%;
+  font-weight: 200;
+  font-size: 60px;
+  opacity: 0.5;
+}
+.wrapper header .slider .carousel .carousel-control:hover {
+  color: #d3c1ad;
+}
+.wrapper header .topHeader {
+  width: 100%;
+  padding: 40px 376px 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  /*margin: 40px 376px 0;*/
+}
+.wrapper header .topHeader .logo {
+  margin-right: 219px;
+  display: flex;
+  align-items: center;
+  font-family: Relaway, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.36px;
+}
+.wrapper header .topHeader .menu {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper header .topHeader .menu nav {
+  width: 637px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper header .topHeader .menu nav a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper header .topHeader .menu nav a:hover {
+  color: #c7b299;
+}
+.wrapper header .topHeader .menu .iconMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+.wrapper main .services {
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-column-gap: 30px;
+  justify-content: center;
+}
+.wrapper main .services .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper main .services .item h2 {
+  font-size: 22px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.wrapper main .services .item p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  margin-top: 20px;
+  text-align: center;
+}
+.wrapper main .services .item .lineCenter {
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+}
+.wrapper main .services .item:hover h2 {
+  color: #c7b299;
+}
+.wrapper main .services .item:hover .lineCenter {
+  background-color: #c7b299;
+}
+.wrapper main .realizationYouIdeas {
+  padding: 62px 10% 0;
+  background-color: #fbfaf8;
+}
+.wrapper main .realizationYouIdeas .headerTitle {
+  font-size: 30px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wrapper main .realizationYouIdeas .headerText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  margin: 0 auto 40px;
+  width: 757px;
+  text-align: center;
+  /*text-align: center;
+  margin: 0 auto 40px;
+  width: 757px;*/
+}
+.wrapper main .realizationYouIdeas .container {
+  position: relative;
+}
+.wrapper main .realizationYouIdeas .container ul {
+  margin-top: -1300px;
+}
+.wrapper main aside .multipurpose {
+  padding: 4% 17%;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas: "gridTitle gridButton" "gridText gridButton";
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.wrapper main aside .multipurpose .gridTitle {
+  grid-area: gridTitle;
+}
+.wrapper main aside .multipurpose .gridText {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  color: #615855;
+  grid-area: gridText;
+}
+.wrapper main aside .multipurpose .gridButton {
+  grid-area: gridButton;
+}
+.wrapper main aside .multipurpose .item h2 {
+  font-size: 28px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.wrapper main aside .multipurpose .item h2 span {
+  color: #c7b299;
+}
+.wrapper main .latestProject {
+  margin: 80px 20%;
+}
+.wrapper main .latestProject .headerTitle {
+  font-size: 30px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wrapper main .latestProject .headerText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  margin: 0 auto 40px;
+  width: 757px;
+  text-align: center;
+}
+.wrapper main .latestProject nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.wrapper main .latestProject nav a {
+  text-decoration: none;
+  padding: 10px 27px;
+  color: #8c8c8c;
+  display: block;
+  line-height: 21px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+.wrapper main .latestProject nav a:hover {
+  background-color: #998675;
+  color: #fff;
+}
+.wrapper main .latestProject nav a:not(:last-child) {
+  margin-right: 10px;
+}
+.wrapper main .latestProject .projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper main .latestProject .projects .project {
+  position: relative;
+  width: 370px;
+}
+.wrapper main .latestProject .projects .project figure {
+  background-color: #fbfaf8;
+}
+.wrapper main .latestProject .projects .project figure figcaption {
+  padding: 30px 28px;
+}
+.wrapper main .latestProject .projects .project figure figcaption h2, .wrapper main .latestProject .projects .project figure figcaption p {
+  text-align: left;
+}
+.wrapper main .latestProject .projects .project figure figcaption h2 {
+  font-family: Relaway, sans-serif;
+  font-size: 20px;
+  color: #c7b299;
+  margin-bottom: 10px;
+}
+.wrapper main .latestProject .projects .project figure figcaption p {
+  color: #d1d1d1;
+}
+.wrapper main .latestProject .projects .project .linkHover {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 106px;
+}
+.wrapper main .latestProject .projects .project .linkHover a img {
+  filter: brightness(100%);
+}
+.wrapper main .latestProject .projects .project .linkHover a:not(:last-child) {
+  margin-right: 30px;
+}
+.wrapper main .latestProject .projects .project:not(:nth-last-child(-n+3)) {
+  margin-bottom: 30px;
+}
+.wrapper main .latestProject .projects .project:hover figure {
+  background-color: #362f2d;
+}
+.wrapper main .latestProject .projects .project:hover figure figcaption {
+  background-color: transparent;
+}
+.wrapper main .latestProject .projects .project:hover figure img {
+  filter: brightness(30%);
+}
+.wrapper main .latestProject .projects .project:hover figure h2 {
+  color: #fff;
+}
+.wrapper main .latestProject .projects .project:hover figure p {
+  color: #c7b299;
+}
+.wrapper main .latestProject .projects .project:hover .linkHover {
+  visibility: visible;
+}
+.wrapper main .videoSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 705px;
+  background: url("../img/video-midle.png") no-repeat center center, rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+.wrapper main .videoSection .playBtn {
+  margin-bottom: 40px;
+  padding: 14px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.wrapper main .videoSection .playBtn img {
+  display: block;
+}
+.wrapper main .videoSection h2 {
+  font-size: 30px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.wrapper main .videoSection p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  margin: 0 auto 40px;
+  width: 757px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  width: 552px;
+}
+.wrapper main .videoSection time {
+  color: #c7b299;
+}
+.wrapper main .mobileDevices {
+  padding-top: 80px;
+}
+.wrapper main .mobileDevices .itemGrid {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 140px 140px auto;
+  grid-template-areas: "handPhone mobileDevices" "handPhone text" "handPhone listDev";
+}
+.wrapper main .mobileDevices .itemGrid .headerTitle {
+  font-size: 30px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: -30px;
+}
+.wrapper main .mobileDevices .itemGrid p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  line-height: 28px;
+}
+.wrapper main .mobileDevices .itemGrid ul {
+  list-style: none;
+  margin-left: 50px;
+}
+.wrapper main .mobileDevices .itemGrid ul li {
+  background: url("../img/li-arrow.png") no-repeat left center;
+  line-height: 32px;
+  font-weight: 300;
+  padding-left: 50px;
+}
+.wrapper main .mobileDevices .itemGrid ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.wrapper main .mobileDevices .itemGrid .handPhone {
+  grid-area: handPhone;
+}
+.wrapper main .mobileDevices .itemGrid .mobileDevices {
+  grid-area: mobileDevices;
+}
+.wrapper main .mobileDevices .itemGrid .text {
+  grid-area: text;
+  width: 657px;
+  height: 100px;
+}
+.wrapper main .mobileDevices .itemGrid .listDev {
+  grid-area: listDev;
+}
+.wrapper main .inform {
+  padding: 3% 20%;
+  height: 300px;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.wrapper main .inform .itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper main .inform .itemsGrid .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper main .inform .itemsGrid .item img {
+  margin-bottom: 30px;
+}
+.wrapper main .inform .itemsGrid .item .num {
+  color: #fff;
+  font-family: "Montserrat Ultra Light", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.wrapper main .inform .itemsGrid .item .textInfo {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 21px;
+}
+.wrapper main .inform .itemsGrid .item .lineCenter {
+  margin-top: 30px;
+  width: 30px;
+  height: 2px;
+}
+.wrapper main .recentPosts {
+  padding: 82px 20%;
+}
+.wrapper main .recentPosts .headerTitle {
+  font-size: 30px;
+  color: #555;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wrapper main .recentPosts .headerText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  margin: 0 auto 40px;
+  width: 757px;
+  text-align: center;
+}
+.wrapper main .recentPosts .articles {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper main .recentPosts .articles article {
+  position: relative;
+  width: 370px;
+}
+.wrapper main .recentPosts .articles article img {
+  margin-bottom: 20px;
+}
+.wrapper main .recentPosts .articles article h2, .wrapper main .recentPosts .articles article p, .wrapper main .recentPosts .articles article .readMore {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.wrapper main .recentPosts .articles article h2 {
+  font-size: 20px;
+  margin-bottom: 19px;
+  font-weight: 500;
+}
+.wrapper main .recentPosts .articles article p {
+  text-align: left;
+  margin-bottom: 27px;
+}
+.wrapper main .recentPosts .articles article .readMore {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  background: url("../img/arrow-read-more.png") no-repeat right center;
+  color: #c7b299;
+  display: block;
+  width: 88px;
+  margin-bottom: 30px;
+}
+.wrapper main .recentPosts .articles article .linkHover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.wrapper main .recentPosts .articles article .linkHover .datePosted {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 50px;
+  height: 60px;
+  background-color: #363636;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+.wrapper main .recentPosts .articles article .linkHover .datePosted span {
+  margin-bottom: 0;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 400;
+  display: block;
+  background-color: #252525;
+}
+.wrapper main .recentPosts .articles article:hover {
+  background-color: #362f2d;
+}
+.wrapper main .recentPosts .articles article:hover img {
+  filter: brightness(30%);
+}
+.wrapper main .recentPosts .articles article:hover h2 {
+  color: #c7b299;
+}
+.wrapper main .recentPosts .articles article:hover p {
+  color: #fff;
+}
+.wrapper main .recentPosts .articles article:hover .datePosted {
+  background-color: #c7b299;
+}
+.wrapper main .recentPosts .articles article:hover .datePosted span {
+  background-color: #a48d72;
+}
+.wrapper main .recentPosts nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.wrapper main .recentPosts nav .arrow {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #d1d1d1;
+  text-align: center;
+  cursor: pointer;
+}
+.wrapper main .recentPosts nav .arrow .fa {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #d1d1d1;
+}
+.wrapper main .recentPosts nav .arrow:not(:last-child) {
+  margin-right: 10px;
+}
+.wrapper main .recentPosts nav .arrow:hover {
+  border: 2px solid #c7b299;
+}
+.wrapper main .recentPosts nav .arrow:hover .fa {
+  color: #c7b299;
+}
+.wrapper main .logos {
+  padding: 140px 20%;
+  background: url("../img/mounts.png") no-repeat center center, rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+.wrapper main .logos .logosFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper footer {
+  background-color: #191919;
+}
+.wrapper footer .footerTop {
+  padding: 5% 15%;
+}
+.wrapper footer .footerTop .flexContent {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper footer .footerTop .flexContent .item {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Monserrat, sans-serif;
+  color: #8c8c8c;
+  width: 280px;
+}
+.wrapper footer .footerTop .flexContent .item h2 {
+  font-family: Relaway, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.wrapper footer .footerTop .flexContent .item mark {
+  background-color: transparent;
+  color: #00bff3;
+}
+.wrapper footer .footerTop .flexContent .dribleWidget .itemDrible {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(2, 130px);
+}
+.wrapper footer .footerTop .flexContent .waxom img {
+  float: left;
+  margin-right: 10px;
+}
+.wrapper footer .footerTop .flexContent .waxom h2 {
+  font-family: Relaway, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.36px;
+}
+.wrapper footer .footerTop .flexContent .waxom a {
+  padding-right: 15px;
+  color: #d1d1d1;
+  background: url("../img/arrow-white.png") no-repeat center right;
+}
+.wrapper footer .footerTop .flexContent .waxom a:hover {
+  text-decoration: none;
+}
+.wrapper footer .footerTop .flexContent .recentPost .time {
+  display: block;
+  color: #363636;
+}
+.wrapper footer .footerTop .flexContent .recentPost:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #252525;
+}
+.wrapper footer .footerTop .flexContent .recentPost:hover {
+  color: #c7b299;
+}
+.wrapper footer .footerTop .flexContent .recentPost:hover .time {
+  color: #fff;
+}
+.wrapper footer .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 15%;
+  background-color: #111111;
+}
+.wrapper footer .footerBottom .nameLogo {
+  color: #959595;
+}
+.wrapper footer .footerBottom nav a, .wrapper footer .footerBottom .designed a {
+  color: #555;
+}
+.wrapper footer .footerBottom nav a:hover, .wrapper footer .footerBottom .designed a:hover {
+  color: #c7b299;
+  text-decoration: none;
+}
+.wrapper footer .footerBottom nav a:not(:first-child), .wrapper footer .footerBottom .designed a:not(:first-child) {
+  padding-left: 20px;
+}
+.wrapper footer .footerBottom nav a:not(:last-child), .wrapper footer .footerBottom .designed a:not(:last-child) {
+  padding-right: 20px;
+  border-right: 1px solid #555;
+}
+
+/*# sourceMappingURL=style.css.map */

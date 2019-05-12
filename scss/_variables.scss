@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Montserrat Ultra Light";
+  src: url("../fonts/Montserrat-UltraLight.otf");
+}
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+/*colors jf site*/
+$pageWidth: 1920px;
+$headerTextColor: #fff;
+$headerColor: #d3c1ad;
+$footerTextColor: #555;
+$mainTextColor: #8c8c8c;
+$liteGreen: #fbfaf8;
+$liteBrown: #c7b299;
+$styleMonserrat: Monserrat, sans-serif;
+@mixin headerTitle($_fontSize){
+  font-size: $_fontSize;
+  color: $footerTextColor;
+  font-weight: 400;
+  font-family: Raleway-SemiBold, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@mixin headerText($_fontSize){
+  font-size: $_fontSize;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: $styleMonserrat;
+  color: $mainTextColor;
+  margin: 0 auto 40px;
+  width: 757px;
+  text-align: center;
+}
+@mixin mainText($_fontSize){
+  font-size: $_fontSize;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: $styleMonserrat;
+  color: $mainTextColor;
+}
