@@ -41,3 +41,7 @@ $styleMonserrat: Monserrat, sans-serif;
   font-family: $styleMonserrat;
   color: $mainTextColor;
 }
+@mixin getStartedHover($_sec){
+  -webkit-animation: shake-vertical $_sec cubic-bezier(0.455, 0.030, 0.515, 0.955) ;
+  animation: shake-vertical $_sec cubic-bezier(0.455, 0.030, 0.515, 0.955) ;
+}

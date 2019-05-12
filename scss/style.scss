@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400|Raleway:400,400i,500,600,600i,800,800i');
 @import "variables";
+@import "animation";
 
 h1,h2,h3,h4,h5,h6{
   padding: 0;
@@ -32,6 +33,7 @@ p,a{
   line-height: 53px;
   color: $headerTextColor;
   &:hover{
+    @include getStartedHover(0.8s);
     color: $headerTextColor;
     text-decoration: none;
   }
