@@ -144,6 +144,7 @@ p,a{
             color: $headerTextColor;
             text-decoration: none;
             &:hover{
+              @include navLinkScale();
               color: $liteBrown;
             }
           }
