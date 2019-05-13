@@ -134,11 +134,17 @@ p, a {
   font-weight: 400;
   line-height: 53px;
   color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .getStarted:hover {
-  -webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  /*border-radius: 20px;*/
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
   color: #fff;
   text-decoration: none;
 }
@@ -251,15 +257,25 @@ p, a {
 }
 
 .wrapper header .topHeader .menu nav a {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px;
   font-size: 14px;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .wrapper header .topHeader .menu nav a:hover {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  /*@include navLinkScale();*/
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
   color: #c7b299;
 }
 
@@ -433,9 +449,16 @@ p, a {
   background-color: #fff;
   border: 1px solid #ebebeb;
   border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .wrapper main .latestProject nav a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   background-color: #998675;
   color: #fff;
 }
@@ -849,6 +872,25 @@ p, a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.wrapper main .logos .logosFlex img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper main .logos .logosFlex img:hover {
+  -webkit-transform: rotateZ(20deg);
+  -ms-transform: rotateZ(20deg);
+  transform: rotateZ(20deg);
+}
+
+.wrapper main .logos .logosFlex img:hover:nth-child(2n):hover {
+  -webkit-transform: rotateZ(-180deg);
+  -ms-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
 }
 
 .wrapper footer {

@@ -32,8 +32,12 @@ p,a{
   font-weight: 400;
   line-height: 53px;
   color: $headerTextColor;
+  @include transition(.5s);
   &:hover{
-    @include getStartedHover(0.8s);
+    /*border-radius: 20px;*/
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     color: $headerTextColor;
     text-decoration: none;
   }
@@ -139,12 +143,20 @@ p,a{
           display: flex;
           justify-content: space-between;
           a {
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 30px;
             font-size: 14px;
             font-weight: 300;
             color: $headerTextColor;
             text-decoration: none;
+            @include transition(.5s);
             &:hover{
-              @include navLinkScale();
+              /*@include navLinkScale();*/
+              -webkit-transform: scale(1.5);
+              -ms-transform: scale(1.5);
+              transform: scale(1.5);
               color: $liteBrown;
             }
           }
@@ -275,7 +287,11 @@ p,a{
           background-color: $headerTextColor;
           border: 1px solid #ebebeb;
           border-radius: 5px;
+          @include transition(.5s);
           &:hover{
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
             background-color: #998675;
             color: $headerTextColor;
           }
@@ -592,6 +608,19 @@ p,a{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        img{
+          @include transition(.5s);
+          &:hover{
+            -webkit-transform: rotateZ(20deg);
+            -ms-transform: rotateZ(20deg);
+            transform: rotateZ(20deg);
+            &:nth-child(2n):hover{
+              -webkit-transform: rotateZ(-180deg);
+              -ms-transform: rotateZ(-180deg);
+              transform: rotateZ(-180deg);
+            }
+          }
+        }
       }
     }
   }
