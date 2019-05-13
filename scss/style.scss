@@ -116,7 +116,7 @@ p,a{
     }
     .topHeader{
       width: 100%;
-      padding: 40px 376px 0;
+      padding: 40px 19.5% 0;
       position: absolute;
       display: flex;
       justify-content: space-between;
@@ -212,7 +212,6 @@ p,a{
         }
       }
     }
-
     .realizationYouIdeas {
       padding: 62px 10% 0;
       background-color: $liteGreen;
@@ -236,7 +235,7 @@ p,a{
     }
     aside{
       .multipurpose {
-        padding: 4% 17%;
+        padding: 3% 17%;
         display: grid;
         justify-content: space-between;
         align-items: center;
@@ -269,7 +268,7 @@ p,a{
       }
     }
     .latestProject{
-      margin: 80px 20%;
+      padding: 80px 20%;
       .headerTitle{
         @include headerTitle(30px);
       }
@@ -731,6 +730,48 @@ p,a{
           &:not(:last-child) {
             padding-right: 20px;
             border-right: 1px solid $footerTextColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1936px){
+  .wrapper{
+    width: 1600px;
+    header{
+      .topHeader{
+        padding: 40px 18% 0;
+        .logo{
+          margin-right: 11%;
+        }
+      }
+    }
+    main{
+      .realizationYouIdeas{
+        .container{}
+      }
+      .multipurpose,
+      .inform{
+        padding: 3% 11%;
+      }
+      .latestProject,
+      .recentPosts{
+        padding: 82px 11%;
+      }
+      .latestProject{
+        .projects{
+          justify-content: space-around;
+        }
+      }
+      .recentPosts{
+        padding: 82px 11%;
+        .articles{
+          article {
+            /*&:last-child {
+              visibility: hidden;
+            }*/
           }
         }
       }

@@ -329,7 +329,7 @@ p, a {
 
 .wrapper header .topHeader {
   width: 100%;
-  padding: 40px 376px 0;
+  padding: 40px 19.5% 0;
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -481,7 +481,7 @@ p, a {
 }
 
 .wrapper main aside .multipurpose {
-  padding: 4% 17%;
+  padding: 3% 17%;
   display: grid;
   justify-content: space-between;
   align-items: center;
@@ -522,7 +522,7 @@ p, a {
 }
 
 .wrapper main .latestProject {
-  margin: 80px 20%;
+  padding: 80px 20%;
 }
 
 .wrapper main .latestProject .headerTitle {
@@ -1133,4 +1133,35 @@ p, a {
 .wrapper footer .footerBottom nav a:not(:last-child), .wrapper footer .footerBottom .designed a:not(:last-child) {
   padding-right: 20px;
   border-right: 1px solid #555;
+}
+
+@media (max-width: 1936px) {
+  .wrapper {
+    width: 1600px;
+  }
+  .wrapper header .topHeader {
+    padding: 40px 18% 0;
+  }
+  .wrapper header .topHeader .logo {
+    margin-right: 11%;
+  }
+  .wrapper main .multipurpose,
+  .wrapper main .inform {
+    padding: 3% 11%;
+  }
+  .wrapper main .latestProject,
+  .wrapper main .recentPosts {
+    padding: 82px 11%;
+  }
+  .wrapper main .latestProject .projects {
+    justify-content: space-around;
+  }
+  .wrapper main .recentPosts {
+    padding: 82px 11%;
+  }
+  .wrapper main .recentPosts .articles article {
+    /*&:last-child {
+              visibility: hidden;
+            }*/
+  }
 }
