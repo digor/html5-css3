@@ -467,17 +467,10 @@ p, a {
   margin: 0 auto 40px;
   width: 757px;
   text-align: center;
-  /*text-align: center;
-        margin: 0 auto 40px;
-        width: 757px;*/
 }
 
 .wrapper main .realizationYouIdeas .container {
   position: relative;
-}
-
-.wrapper main .realizationYouIdeas .container ul {
-  margin-top: -1300px;
 }
 
 .wrapper main aside .multipurpose {
