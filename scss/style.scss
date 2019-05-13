@@ -197,6 +197,7 @@ p,a{
           width: 70px;
           height: 3px;
           background-color: #f1eee9;
+          @include transition(.7s);
         }
 
         &:hover {
@@ -206,6 +207,7 @@ p,a{
 
           .lineCenter {
             background-color: $liteBrown;
+            width: 100%;
           }
         }
       }

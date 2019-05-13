@@ -429,6 +429,10 @@ p, a {
   width: 70px;
   height: 3px;
   background-color: #f1eee9;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .wrapper main .services .item:hover h2 {
@@ -437,6 +441,7 @@ p, a {
 
 .wrapper main .services .item:hover .lineCenter {
   background-color: #c7b299;
+  width: 100%;
 }
 
 .wrapper main .realizationYouIdeas {
