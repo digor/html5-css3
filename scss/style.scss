@@ -48,7 +48,6 @@ p,a{
   position: relative;
   header{
     color: $headerTextColor;
-    height: 1024px;
     .slider{
       position: relative;
       width: 100%;
@@ -223,6 +222,23 @@ p,a{
       }
       .container{
         position: relative;
+        height: 360px;
+        .imgYourIdeas{
+          position: absolute;
+          width: 570px;
+        }
+        .browser-left,
+        .browser-right{
+          top: calc(360px - 296.1px);
+        }
+        .browser-center{
+          z-index: 1;
+          top: calc(360px - 356.8px);
+          left: calc(100% / 2 - 570px / 2);
+        }
+        .browser-right{
+          left: calc(100% - 570px);
+        }
       }
     }
     aside{
@@ -742,10 +758,30 @@ p,a{
     }
     main{
       .realizationYouIdeas{
-        .container{}
+        .container{
+          position: relative;
+          height: 360px;
+          .imgYourIdeas{
+            position: absolute;
+            width: 570px;
+          }
+          .browser-left,
+          .browser-right{
+            top: calc(360px - 296.1px);
+          }
+          .browser-center{
+            z-index: 1;
+            top: calc(360px - 356.8px);
+            left: calc(100% / 2 - 570px / 2);
+          }
+          .browser-right{
+            left: calc(100% - 570px);
+          }
+        }
       }
       .multipurpose,
-      .inform{
+      .inform,
+      .logos{
         padding: 3% 11%;
       }
       .latestProject,
@@ -768,5 +804,16 @@ p,a{
         }
       }
     }
+    footer{
+      .footerTop,
+      .footerBottom{
+        padding: 3% 11%;
+      }
+    }
+  }
+}
+@media (max-width: 1616px) {
+  .wrapper{
+    width: 1200px;
   }
 }

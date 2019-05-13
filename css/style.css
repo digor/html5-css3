@@ -263,7 +263,6 @@ p, a {
 
 .wrapper header {
   color: #fff;
-  height: 1024px;
 }
 
 .wrapper header .slider {
@@ -471,6 +470,27 @@ p, a {
 
 .wrapper main .realizationYouIdeas .container {
   position: relative;
+  height: 360px;
+}
+
+.wrapper main .realizationYouIdeas .container .imgYourIdeas {
+  position: absolute;
+  width: 570px;
+}
+
+.wrapper main .realizationYouIdeas .container .browser-left,
+.wrapper main .realizationYouIdeas .container .browser-right {
+  top: calc(360px - 296.1px);
+}
+
+.wrapper main .realizationYouIdeas .container .browser-center {
+  z-index: 1;
+  top: calc(360px - 356.8px);
+  left: calc(100% / 2 - 570px / 2);
+}
+
+.wrapper main .realizationYouIdeas .container .browser-right {
+  left: calc(100% - 570px);
 }
 
 .wrapper main aside .multipurpose {
@@ -1138,8 +1158,29 @@ p, a {
   .wrapper header .topHeader .logo {
     margin-right: 11%;
   }
+  .wrapper main .realizationYouIdeas .container {
+    position: relative;
+    height: 360px;
+  }
+  .wrapper main .realizationYouIdeas .container .imgYourIdeas {
+    position: absolute;
+    width: 570px;
+  }
+  .wrapper main .realizationYouIdeas .container .browser-left,
+  .wrapper main .realizationYouIdeas .container .browser-right {
+    top: calc(360px - 296.1px);
+  }
+  .wrapper main .realizationYouIdeas .container .browser-center {
+    z-index: 1;
+    top: calc(360px - 356.8px);
+    left: calc(100% / 2 - 570px / 2);
+  }
+  .wrapper main .realizationYouIdeas .container .browser-right {
+    left: calc(100% - 570px);
+  }
   .wrapper main .multipurpose,
-  .wrapper main .inform {
+  .wrapper main .inform,
+  .wrapper main .logos {
     padding: 3% 11%;
   }
   .wrapper main .latestProject,
@@ -1156,5 +1197,15 @@ p, a {
     /*&:last-child {
               visibility: hidden;
             }*/
+  }
+  .wrapper footer .footerTop,
+  .wrapper footer .footerBottom {
+    padding: 3% 11%;
+  }
+}
+
+@media (max-width: 1616px) {
+  .wrapper {
+    width: 1200px;
   }
 }
