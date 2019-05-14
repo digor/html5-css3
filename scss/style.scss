@@ -170,9 +170,9 @@ p,a{
   }
   main {
     .services {
-      margin: 80px auto;
+      padding: 80px 10%;
       display: grid;
-      grid-template-columns: repeat(4, 300px);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 30px;
       justify-content: center;
 
@@ -223,6 +223,7 @@ p,a{
       .container{
         position: relative;
         height: 360px;
+        width: 100%;
         .imgYourIdeas{
           position: absolute;
           width: 570px;
@@ -763,7 +764,6 @@ p,a{
           height: 360px;
           .imgYourIdeas{
             position: absolute;
-            width: 570px;
           }
           .browser-left,
           .browser-right{
@@ -795,13 +795,6 @@ p,a{
       }
       .recentPosts{
         padding: 82px 11%;
-        .articles{
-          article {
-            /*&:last-child {
-              visibility: hidden;
-            }*/
-          }
-        }
       }
     }
     footer{
@@ -815,5 +808,32 @@ p,a{
 @media (max-width: 1616px) {
   .wrapper{
     width: 1200px;
+    header{
+      .topHeader{
+        padding: 40px 11% 0;
+        .logo{
+          margin-right: 2%;
+        }
+      }
+    }
+    main{
+      .recentPosts{
+        .articles {
+          justify-content: space-around;
+          article {
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+      .logos{
+        .logosFlex{
+          img{
+            width: 170px;
+          }
+        }
+      }
+    }
   }
 }

@@ -391,9 +391,9 @@ p, a {
 }
 
 .wrapper main .services {
-  margin: 80px auto;
+  padding: 80px 10%;
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
   justify-content: center;
 }
@@ -471,6 +471,7 @@ p, a {
 .wrapper main .realizationYouIdeas .container {
   position: relative;
   height: 360px;
+  width: 100%;
 }
 
 .wrapper main .realizationYouIdeas .container .imgYourIdeas {
@@ -1164,7 +1165,6 @@ p, a {
   }
   .wrapper main .realizationYouIdeas .container .imgYourIdeas {
     position: absolute;
-    width: 570px;
   }
   .wrapper main .realizationYouIdeas .container .browser-left,
   .wrapper main .realizationYouIdeas .container .browser-right {
@@ -1193,11 +1193,6 @@ p, a {
   .wrapper main .recentPosts {
     padding: 82px 11%;
   }
-  .wrapper main .recentPosts .articles article {
-    /*&:last-child {
-              visibility: hidden;
-            }*/
-  }
   .wrapper footer .footerTop,
   .wrapper footer .footerBottom {
     padding: 3% 11%;
@@ -1207,5 +1202,20 @@ p, a {
 @media (max-width: 1616px) {
   .wrapper {
     width: 1200px;
+  }
+  .wrapper header .topHeader {
+    padding: 40px 11% 0;
+  }
+  .wrapper header .topHeader .logo {
+    margin-right: 2%;
+  }
+  .wrapper main .recentPosts .articles {
+    justify-content: space-around;
+  }
+  .wrapper main .recentPosts .articles article:last-child {
+    display: none;
+  }
+  .wrapper main .logos .logosFlex img {
+    width: 170px;
   }
 }
