@@ -1044,12 +1044,12 @@ p, a {
   padding: 5% 15%;
 }
 
-.wrapper footer .footerTop .flexContent {
-  display: flex;
-  justify-content: space-between;
+.wrapper footer .footerTop .gridContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.wrapper footer .footerTop .flexContent .item {
+.wrapper footer .footerTop .gridContent .item {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1058,7 +1058,7 @@ p, a {
   width: 280px;
 }
 
-.wrapper footer .footerTop .flexContent .item h2 {
+.wrapper footer .footerTop .gridContent .item h2 {
   font-family: Relaway, sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -1067,56 +1067,56 @@ p, a {
   margin-bottom: 20px;
 }
 
-.wrapper footer .footerTop .flexContent .item mark {
+.wrapper footer .footerTop .gridContent .item mark {
   background-color: transparent;
   color: #00bff3;
 }
 
-.wrapper footer .footerTop .flexContent .dribleWidget .itemDrible {
+.wrapper footer .footerTop .gridContent .dribleWidget .itemDrible {
   display: grid;
   grid-gap: 10px;
   justify-content: center;
   grid-template-columns: repeat(2, 130px);
 }
 
-.wrapper footer .footerTop .flexContent .waxom img {
+.wrapper footer .footerTop .gridContent .waxom img {
   float: left;
   margin-right: 10px;
 }
 
-.wrapper footer .footerTop .flexContent .waxom h2 {
+.wrapper footer .footerTop .gridContent .waxom h2 {
   font-family: Relaway,sans-serif;
   font-size: 36px;
   font-weight: 400;
   letter-spacing: -1.36px;
 }
 
-.wrapper footer .footerTop .flexContent .waxom a {
+.wrapper footer .footerTop .gridContent .waxom a {
   padding-right: 15px;
   color: #d1d1d1;
   background: url("../img/arrow-white.png") no-repeat center right;
 }
 
-.wrapper footer .footerTop .flexContent .waxom a:hover {
+.wrapper footer .footerTop .gridContent .waxom a:hover {
   text-decoration: none;
 }
 
-.wrapper footer .footerTop .flexContent .recentPost .time {
+.wrapper footer .footerTop .gridContent .recentPost .time {
   display: block;
   color: #363636;
 }
 
-.wrapper footer .footerTop .flexContent .recentPost:not(:last-child) {
+.wrapper footer .footerTop .gridContent .recentPost:not(:last-child) {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #252525;
 }
 
-.wrapper footer .footerTop .flexContent .recentPost:hover {
+.wrapper footer .footerTop .gridContent .recentPost:hover {
   color: #c7b299;
 }
 
-.wrapper footer .footerTop .flexContent .recentPost:hover .time {
+.wrapper footer .footerTop .gridContent .recentPost:hover .time {
   color: #fff;
 }
 
@@ -1217,5 +1217,23 @@ p, a {
   }
   .wrapper main .logos .logosFlex img {
     width: 170px;
+  }
+  .wrapper footer .footerTop .gridContent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template: "recentPosts ourTwitter" "waxom dribleWidget";
+    justify-content: space-around;
+    grid-gap: 30px;
+  }
+  .wrapper footer .footerTop .gridContent .waxom {
+    grid-area: waxom;
+  }
+  .wrapper footer .footerTop .gridContent .recentPosts {
+    grid-area: recentPosts;
+  }
+  .wrapper footer .footerTop .gridContent .ourTwitter {
+    grid-area: ourTwitter;
+  }
+  .wrapper footer .footerTop .gridContent .dribleWidget {
+    grid-area: dribleWidget;
   }
 }

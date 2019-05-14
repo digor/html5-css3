@@ -652,9 +652,9 @@ p,a{
     background-color: #191919;
     .footerTop{
       padding: 5% 15%;
-      .flexContent {
-        display: flex;
-        justify-content: space-between;
+      .gridContent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         .item {
           @include mainText(14px);
           width: 280px;
@@ -831,6 +831,30 @@ p,a{
         .logosFlex{
           img{
             width: 170px;
+          }
+        }
+      }
+    }
+    footer{
+      .footerTop {
+        .gridContent {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template:
+                  "recentPosts ourTwitter"
+                  "waxom dribleWidget";
+          justify-content: space-around;
+          grid-gap: 30px;
+          .waxom {
+            grid-area: waxom;
+          }
+          .recentPosts {
+            grid-area: recentPosts;
+          }
+          .ourTwitter {
+            grid-area: ourTwitter;
+          }
+          .dribleWidget {
+            grid-area: dribleWidget;
           }
         }
       }
