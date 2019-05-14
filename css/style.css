@@ -723,14 +723,14 @@ p, a {
 }
 
 .wrapper main .mobileDevices {
-  padding-top: 80px;
+  padding: 80px 11% 0;
 }
 
 .wrapper main .mobileDevices .itemGrid {
   display: grid;
   justify-content: center;
   grid-template-rows: 140px 140px auto;
-  grid-template-areas: 'handPhone mobileDevices' 'handPhone text' 'handPhone listDev';
+  grid-template-areas: 'handPhone titleGrid' 'handPhone text' 'handPhone listDev';
 }
 
 .wrapper main .mobileDevices .itemGrid .headerTitle {
@@ -740,8 +740,8 @@ p, a {
   font-family: Raleway-SemiBold, sans-serif;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 80px;
   text-align: left;
-  margin-bottom: -30px;
 }
 
 .wrapper main .mobileDevices .itemGrid p {
@@ -773,14 +773,12 @@ p, a {
   grid-area: handPhone;
 }
 
-.wrapper main .mobileDevices .itemGrid .mobileDevices {
-  grid-area: mobileDevices;
+.wrapper main .mobileDevices .itemGrid .titleGrid {
+  grid-area: titleGrid;
 }
 
 .wrapper main .mobileDevices .itemGrid .text {
   grid-area: text;
-  width: 657px;
-  height: 100px;
 }
 
 .wrapper main .mobileDevices .itemGrid .listDev {

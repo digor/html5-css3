@@ -411,19 +411,19 @@ p,a{
       }
     }
     .mobileDevices{
-      padding-top: 80px;
+      padding: 80px 11% 0;
       .itemGrid{
         display: grid;
         justify-content: center;
         grid-template-rows: 140px 140px auto;
         grid-template-areas:
-                'handPhone mobileDevices'
+                'handPhone titleGrid'
                 'handPhone text'
                 'handPhone listDev';
         .headerTitle{
           @include headerTitle(30px);
+          margin-top: 80px;
           text-align: left;
-          margin-bottom: -30px;
         }
         p{
           @include mainText(16px);
@@ -445,13 +445,11 @@ p,a{
         .handPhone{
           grid-area: handPhone;
         }
-        .mobileDevices{
-          grid-area: mobileDevices;
+        .titleGrid{
+          grid-area: titleGrid;
         }
         .text{
           grid-area: text;
-          width: 657px;
-          height: 100px;
         }
         .listDev{
           grid-area: listDev;
